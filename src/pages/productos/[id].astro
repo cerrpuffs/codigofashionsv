@@ -1,0 +1,29 @@
+---
+import productos from "../../assets/json/hombres.json";
+
+// 1. Exporta la función getStaticPaths
+export async function getStaticPaths() {
+  // 2. Mapea tu array de productos para obtener un objeto de params por cada uno.
+  return productos.map((producto) => ({
+    params: { id: producto.id },
+  }));
+}
+
+// 3. Obtén el id de los params y busca el producto
+const { id } = Astro.params;
+const producto = productos.find((p) => p.id === id);
+
+if (!producto) {
+  // Esto es un fallback en caso de que algo salga mal, aunque getStaticPaths ya lo maneja
+  throw new Error(`Producto con id "${id}" no encontrado.`);
+}
+---
+
+<html>
+  <body>
+    <h1>{producto.title}</h1>
+    <img src={producto.img} alt={producto.img} />
+    <p>{producto.description}</p>
+    <p>Precio: {producto.price}</p>
+  </body>
+</html>

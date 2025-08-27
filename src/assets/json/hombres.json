@@ -1,0 +1,26 @@
+[
+  {
+    "id" : "camiseta-basica",
+    "title": "Camiseta Básica",
+    "description": "Camiseta de algodón suave y cómoda, perfecta para el día a día.",
+    "price": "$25.99",
+    "img": "../imgAparte/hombrecamisa.jpeg",
+    "imgHover": "../imgAparte/hombrecamisa2.jpeg"
+  },
+  {
+    "id" : "chaqueta-de-cuero",
+    "title": "Chaqueta de Cuero",
+    "description": "Chaqueta de cuero auténtico con un diseño clásico y atemporal.",
+    "price": "$120.00",
+    "img": "../imgAparte/hombrechaqueta.jpeg",
+    "imgHover": "../imgAparte/hombrechaqueta2.jpeg"
+  },
+  {
+    "id" : "Pantalones-Chinos",
+    "title": "Pantalones Chinos",
+    "description": "Pantalones chinos versátiles y cómodos, ideales para cualquier ocasión.",
+    "price": "$45.50",
+    "img": "../imgAparte/hombrepantalon.jpeg",
+    "imgHover": "../imgAparte/hombrepantalon2.jpeg"
+  }
+]
